@@ -2,7 +2,6 @@
   <HeaderView />
   <router-view/>
   <FooterView />
-  <header-view style="flex-direction: row-reverse" />
 </template>
 
 <script>
