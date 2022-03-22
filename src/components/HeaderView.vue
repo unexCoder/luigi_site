@@ -6,10 +6,10 @@
       </router-link>
     </div>
     <nav id="main-navbar">
-      <router-link to="/">home</router-link>
-      <router-link to="/works">works</router-link>
-      <router-link to="/bio">bio</router-link>
-      <router-link to="/contact">contact</router-link>
+      <router-link to="/">{{$t('navbar.home')}}</router-link>
+      <router-link to="/works">{{$t('navbar.works')}}</router-link>
+      <router-link to="/bio">{{$t('navbar.bio')}}</router-link>
+      <router-link to="/contact">{{$t('navbar.contact')}}</router-link>
     </nav>
   </div>
 </template>
