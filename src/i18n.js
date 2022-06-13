@@ -1,3 +1,4 @@
+import { useI18n } from 'vue-i18n'
 import { createI18n } from 'vue-i18n/index'
 
 /**
@@ -20,7 +21,7 @@ function loadLocaleMessages() {
 }
 
 export default createI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || 'es',
+  locale: process.env.VUE_APP_I18N_LOCALE || 'en',
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
   messages: loadLocaleMessages()
 })

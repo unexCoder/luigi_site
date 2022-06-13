@@ -7,11 +7,9 @@
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import FooterView from '@/components/FooterView.vue'
-
 export default {
-  components: { HeaderView, FooterView } 
+  components: { HeaderView, FooterView}
 }
-
 </script>
 
 
@@ -22,5 +20,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
  }
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+}
 </style>
