@@ -1,8 +1,28 @@
 <template>
-  <div class="works">
+  <div class="works" @mouseenter="setToolbarFalse" @touchmove="setToolbarFalse">
       <p>this is the works page</p>
   </div>
 </template>
+
+<script>
+import useToolbarSwitch from '../modules/useToolbarSwitch'
+
+export default {
+  name: 'WorksView',
+  components: {},
+  setup() {
+        const { setToolbarView } = useToolbarSwitch()
+
+    function setToolbarFalse () {
+      setToolbarView(false)
+    }
+
+    return {
+      setToolbarFalse
+    }
+  }
+}
+</script>
 
 <style>
   .works {

@@ -1,22 +1,36 @@
 <template>
-  <div class="main-header">
+  <div class="main-header" @mouseenter="showtoolbar=true" @touchmove="showtoolbar=true">
     <div id="header-main-title">
       <router-link to="/">
         <h1>luis_tamagnini</h1>
       </router-link>
     </div>
     <nav id="main-navbar">
-      <router-link to="/">home</router-link>
-      <router-link to="/works">works</router-link>
-      <router-link to="/bio">bio</router-link>
-      <router-link to="/contact">contact</router-link>
+      <router-link to="/">{{$t('navbar.home')}}</router-link>
+      <router-link to="/works">{{$t('navbar.works')}}</router-link>
+      <router-link to="/bio">{{$t('navbar.bio')}}</router-link>
+      <router-link to="/contact">{{$t('navbar.contact')}}</router-link>
     </nav>
   </div>
+  <transition name="toolbar">
+    <div class="main-toolbar" v-if="showtoolbar">
+      <tool-bar-view />    
+    </div>
+  </transition>
 </template>
 
 <script>
-export default {
+import ToolBarView from './ToolBarView.vue'
+import useToolbarSwitch from '../modules/useToolbarSwitch'
 
+export default {
+  components: { ToolBarView },   
+  setup() {
+    const { showtoolbar } = useToolbarSwitch()
+    return {
+       showtoolbar
+    }
+  }
 }
 </script>
 
@@ -62,6 +76,32 @@ export default {
       display:flex;
       flex-direction: column;
       text-align: right;
+      margin-top: 1vh;
     }
-}
+  }
+
+  .toolbar-enter-from {
+    top: -3vh;
+    height: 0; 
+    z-index: -1;
+  }
+  .toolbar-enter-to {
+    top: 0;
+    height: 3vh;
+    z-index: -1; 
+  }
+  .toolbar-enter-active,
+  .toolbar-leave-active {
+    transition: all 0.4s ease;
+  }
+  .toolbar-leave-from {
+    top: 0;
+    height: 3vh;
+    z-index: 0;
+  }
+  .toolbar-leave-to {
+    top: -3vh;
+    height: 0; 
+    z-index: -1;
+  }
 </style>
