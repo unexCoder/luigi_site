@@ -4,5 +4,8 @@
       "works": "lavori",
       "bio": "bio",
       "contact": "contatto"
+    },
+    "bio":{
+      "bio":"Artista e programmatore."
     }
   }

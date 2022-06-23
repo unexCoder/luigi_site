@@ -28,6 +28,7 @@ export default {
   .works {
     height: 85vh;
     z-index: -1;
-    background: #ff55ff55;
+    background: #777;
+    color: #fff;
   }
 </style>

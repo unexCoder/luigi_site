@@ -1,7 +1,11 @@
 <template>
   <div class="main-toolbar">
-    <div class="local">
-      <p><span @click="$i18n.locale='en'">en</span> | <span @click="$i18n.locale='es'">es</span> | <span @click="$i18n.locale='it'">it</span></p>
+    <div id="local">
+      <p>
+        <span @click="$i18n.locale='en'" :class="$i18n.locale === 'en' && 'active'">en</span>
+       | <span @click="$i18n.locale='es'" :class="$i18n.locale === 'es' && 'active'">es</span>
+       | <span @click="$i18n.locale='it'" :class="$i18n.locale === 'it' && 'active'">it</span>
+      </p>
     </div>
   </div>
 </template>
@@ -28,10 +32,13 @@ export default {
     justify-content: flex-end;
   }
 
-  .local {
+  #local {
     padding: 0 2.2vw;
     font-weight: bold;
     cursor: pointer;
   }
 
+  .active {
+    color: #fff;
+  }
 </style>

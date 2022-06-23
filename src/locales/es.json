@@ -4,5 +4,12 @@
       "works": "obras",
       "bio": "bio",
       "contact": "contacto"
+    },
+    "bio":{
+      "bio":"Artista y programador. Iniciado a fines de los 90 en la composición de música electrónica y concreta. Su trabajo está fuertemente entrelazado con procesos y conceptos algorítmicos.",
+      "bio2":"A mediados de los 2000 comenzó a investigar con lenguajes de programación y aplicar técnicas algorítmicas en trabajos de computación musical y computación gráfica, desarrollando una serie de piezas audiovisuales experimentales.",
+      "bio3":"Su proceso de pensamiento actual está fuertemente ligado a un número de conceptos (no solo) computacionales; como generatividad, ruido, máquinas de estados finito, fractales y procesos algebraicos; y algunos otros más meta-estructurales como la modularidad y la hibridación en sistemas complejos (digital-analógico, hombre-máquina) y redes. También está interesado en el 'live-coding' y la improvisación.",
+      "bio4":"Sus obras incluyen composiciones musicales, audiovisuales electrónicos, instalaciones, videoarte y aplicaciones, entre otros.",
+      "bio5":"Sus obras incluyen composiciones musicales, audiovisuales electrónicos, instalaciones, videoarte y aplicaciones, entre otros."
     }
   }
