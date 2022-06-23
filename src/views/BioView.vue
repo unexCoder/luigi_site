@@ -69,5 +69,8 @@ export default {
   .logos svg{
     padding: 1rem 0.35rem;
   }
+  a {
+    color: #fff;
+  }
 
 </style>

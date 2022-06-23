@@ -8,8 +8,8 @@
     <nav id="main-navbar">
       <router-link to="/">{{$t('navbar.home')}}</router-link>
       <router-link to="/works">{{$t('navbar.works')}}</router-link>
+      <router-link to="/projects">{{$t('navbar.projects')}}</router-link>
       <router-link to="/bio">{{$t('navbar.bio')}}</router-link>
-      <router-link to="/contact">{{$t('navbar.contact')}}</router-link>
     </nav>
   </div>
   <transition name="toolbar">
