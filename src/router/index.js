@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ContactView from '../views/ContactView.vue'
+import ProjectsView from '../views/ProjectsView.vue'
 import NotFoundView from '../views/NotFoundView.vue'
 import BioView from '../views/BioView.vue'
 import WorksView from '../views/WorksView.vue'
@@ -22,9 +22,9 @@ const routes = [
     component: BioView
   },
   {
-    path: '/contact',
-    name: 'contact',
-    component: ContactView
+    path: '/projects',
+    name: 'projects',
+    component: ProjectsView
   },
   {
     path: '/:catchAll(.*)',
