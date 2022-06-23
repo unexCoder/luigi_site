@@ -1,6 +1,8 @@
 <template>
   <div class="contact" @mouseenter="setToolbarFalse" @touchmove="setToolbarFalse">
-    <h1>This is the contact page</h1>
+    <div class="content">
+      <h2><a href="mailto:bosca.music@gmail.com">Email me</a></h2>
+    </div>
   </div>
 </template>
 
@@ -28,7 +30,15 @@ export default {
   .contact {
     height: 85vh;
     z-index: -1;
-    /* background: #f0f; */
-    background: #f5f5dc;
+    background: #555;
+    text-align: left;
+    padding: 2vw;
+    font-family: 'Helvetica' ;
+  }
+  .content a{
+    color: #fff;
+    text-decoration: none; 
+    font-size: 1.5em;
+    font-weight: 900;
   }
 </style>

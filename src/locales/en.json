@@ -4,5 +4,12 @@
     "works": "works",
     "bio": "bio",
     "contact": "contact"
+  },
+  "bio":{
+    "bio":"Artist and developer. He started in the late 90s as a composer of electronic and concrete music. His work is deeply intertwined with algorithmic processes and concepts.",
+    "bio2":"In the mid-2000s, he began to investigate programming languages ​​and apply algorithmic techniques in computer music and computer graphics, developing a series of experimental audiovisual pieces.",
+    "bio3":"His current thincking process is strongly attached to a number of (not only) computacional concepts such as generativity, noise, finite state machines, fractals and algebraic processes; and some others more meta-structural ones like modularity and hybridization in complex systems (digital-analog, man-machines) and networks.  He is also interested in live-coding and improvisation.",
+    "bio4":"His works include musical compositions, electronic audiovisuals performances, installations, videoart and apps, among others.",
+    "bio5":"His works include musical compositions, electronic audiovisuals performances, installations, videoart and apps, among others."
   }
 }
