@@ -18,9 +18,14 @@ export default {
     position: fixed;
     bottom: 0;
     padding: 10px 0 0 0;
-    background: #333;
+    /* background: #333; */
+    background: #111;
     color: #ff0032;
     font-size: 12px;
     font-weight: bold;
+}
+
+.main-footer p {
+    padding-top: 1vh;
 }
 </style>

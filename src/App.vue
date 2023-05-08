@@ -20,14 +20,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
-  overflow: hidden;
  }
 ::-webkit-scrollbar {
   display: none;
 }
 body {
-  overflow: hidden;
   height: 100vh;
-  background: #555;
+  background: #000;
+  overflow: hidden;
+
 }
 </style>
