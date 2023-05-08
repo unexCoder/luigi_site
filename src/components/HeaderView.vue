@@ -6,10 +6,10 @@
       </router-link>
     </div>
     <nav id="main-navbar">
-      <router-link to="/">{{$t('navbar.home')}}</router-link>
-      <router-link to="/works">{{$t('navbar.works')}}</router-link>
-      <router-link to="/projects">{{$t('navbar.projects')}}</router-link>
-      <router-link to="/bio">{{$t('navbar.bio')}}</router-link>
+      <!-- <router-link to="/">{{$t('navbar.home')}}</router-link> -->
+      <router-link class="navitem" to="/works">{{$t('navbar.works')}}</router-link>
+      <router-link class="navitem" to="/projects">{{$t('navbar.projects')}}</router-link>
+      <router-link class="navitem" to="/bio">{{$t('navbar.bio')}}</router-link>
     </nav>
   </div>
   <transition name="toolbar">
@@ -37,9 +37,9 @@ export default {
 <style>
   .main-header {
     color: #ff0032;
-    background: #333;
+    background: #111;
     width: 100%;
-    height: 10vh;
+    height: 6vh;
     display: flex;
     justify-content:space-between;
     padding: 10px 0;
@@ -64,14 +64,18 @@ export default {
 
   #main-navbar a {
     font-weight: bold;
-    color: #fff;
+    color: #ff0032;
     padding: 1px 4px;
   }
   #main-navbar a.router-link-exact-active {
-    color: #ff0032;
+    color: #fff;
   }
 
   @media (max-width: 460px) {
+  .main-header {
+    height: 10vh;
+  }
+
     #main-navbar {
       display:flex;
       flex-direction: column;
@@ -103,5 +107,9 @@ export default {
     top: -3vh;
     height: 0; 
     z-index: -1;
+  }
+
+  .navitem {
+    margin: 0.25vh 0;
   }
 </style>

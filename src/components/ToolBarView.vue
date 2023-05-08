@@ -24,7 +24,7 @@ export default {
 <style>
   .main-toolbar {
     color: #ff0032;
-    background: #333;
+    background: #111;
     width: 100%;
     height: 3vh;
     display: flex;
