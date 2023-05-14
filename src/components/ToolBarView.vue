@@ -3,8 +3,8 @@
     <div id="local">
       <p>
         <span @click="$i18n.locale='en'" :class="$i18n.locale === 'en' && 'active'">en</span>
-       | <span @click="$i18n.locale='es'" :class="$i18n.locale === 'es' && 'active'">es</span>
-       | <span @click="$i18n.locale='it'" :class="$i18n.locale === 'it' && 'active'">it</span>
+        <span class="bar"> | </span><span @click="$i18n.locale='es'" :class="$i18n.locale === 'es' && 'active'">es</span>
+        <span class="bar"> | </span><span @click="$i18n.locale='it'" :class="$i18n.locale === 'it' && 'active'">it</span>
       </p>
     </div>
   </div>
@@ -40,5 +40,9 @@ export default {
 
   .active {
     color: #fff;
+  }
+
+  .bar {
+    font-weight:100;
   }
 </style>
